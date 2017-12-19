@@ -1,0 +1,56 @@
+.page{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-image:url('./pics/back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.mainPage{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-image:url('./pics/mainback.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.listPage{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-image:url('./pics/listback.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; 
+  padding-top: 200px;
+}
+.button{
+  padding-left:50px;
+  cursor: pointer;
+}
+.viewer{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0; 
+}
+webview{
+  width: 100%;
+  height: 100%;
+}
+.backButtonCon{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
