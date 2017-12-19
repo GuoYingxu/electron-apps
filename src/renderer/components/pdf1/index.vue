@@ -58,7 +58,8 @@
 <script>
 import path from 'path'
 import {mapState} from 'vuex'
-const PDF_JS_PATH = path.join(path.resolve(__dirname), '../../../pdfjs', 'web', 'viewer.html');
+// const PDF_JS_PATH = path.join(path.resolve(__dirname), '../../../pdfjs', 'web', 'viewer.html');
+ const PDF_JS_PATH = path.join(path.resolve(require('electron').remote.app.getAppPath()), 'dist/electron/static/pdfjs', 'web', 'viewer.html');
 export default {
   data(){
     return {

@@ -32,6 +32,7 @@ function createWindow () {
     }, function (files) {
       // if (files) event.sender.send('selected-directory', files)
       if(files && files.length >0){
+        storage.set('configPath',files[0])
         event.sender.send('setConfigPath',files[0])
       }
     }) 
@@ -49,6 +50,7 @@ function createWindow () {
         }, function (files) {
           // if (files) event.sender.send('selected-directory', files)
           if(files && files.length> 0){
+            storage.set('configPath',files[0])
             event.sender.send('setConfigPath',files[0])
           }
         })
