@@ -23,6 +23,10 @@ function createWindow () {
     width: 1000,
     // frame: false
   })
+  mainWindow.setFullScreen(true);
+  globalShortcut.register('ESC', () => {
+      mainWindow.setFullScreen(false);
+  })
 
   mainWindow.loadURL(winURL)
   //快捷键

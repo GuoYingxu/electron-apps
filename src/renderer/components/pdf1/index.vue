@@ -24,7 +24,7 @@
             img(src="./pics/06-1.png")
       Row
         Col(span=8)
-          .button(@click="showpdf('生态法治（法条组合）')")
+          .button(@click="showpdf('生态法治法条组合')")
             img(src="./pics/07-1.png")
         Col(span=8)
           .button(@click="showpdf('野生动物保护法')")
@@ -59,7 +59,7 @@
 import path from 'path'
 import {mapState} from 'vuex'
 // const PDF_JS_PATH = path.join(path.resolve(__dirname), '../../../pdfjs', 'web', 'viewer.html');
- const PDF_JS_PATH = path.join(path.resolve(require('electron').remote.app.getAppPath()), 'dist/electron/static/pdfjs', 'web', 'viewer.html');
+ const PDF_JS_PATH =  path.join(path.resolve(require('electron').remote.app.getAppPath()), 'dist/electron/static/pdfjs', 'web', 'viewer.html');
 export default {
   data(){
     return {
@@ -75,8 +75,6 @@ export default {
       this.current_file = this.configPath + '/' + name +'.pdf' 
       this.current_page = 'viewer';
       this.$nextTick(()=>{
-        console.log(this.$refs)
-      console.log(this.$refs.pdfviewer)
       this.$refs.pdfviewer.src=this.viewUrl
 
       })
